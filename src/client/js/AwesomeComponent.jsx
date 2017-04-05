@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../style/index.scss';
 
 class AwesomeComponent extends React.Component {
 
@@ -16,7 +17,7 @@ class AwesomeComponent extends React.Component {
   render() {
     return (
       <div>
-        Likes : <span>{this.state.likesCount}</span>
+        Likes : <span className="example">{this.state.likesCount}</span>
         <div><button onClick={this.onLike}>Like Me</button></div>
       </div>
     );
