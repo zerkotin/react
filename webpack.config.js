@@ -15,13 +15,13 @@ var config = {
   module : {
     loaders : [
       {
+        test: /\.scss$/,
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
         test : /\.js?/,
         include : SRC_JS_DIR,
         loader : 'babel-loader'
-      },
-      {
-        test: /\.scss$/,
-        loaders: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
   },
