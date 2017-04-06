@@ -3,7 +3,8 @@ var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var BUILD_DIR = path.resolve(__dirname, 'build');
-var SRC_JS_DIR = path.resolve(__dirname, 'src/client/js');
+var SRC_CLIENT_JS_DIR = path.resolve(__dirname, 'src/client/js');
+var SRC_SERVER_JS_DIR = path.resolve(__dirname, 'src/server/js');
 var SRC_CLIENT_DIR = path.resolve(__dirname, 'src/client');
 var SRC_STYLE_DIR = path.resolve(__dirname, 'src/client/style');
 
@@ -13,10 +14,13 @@ var htmlTemplate = new HtmlWebpackPlugin({
 });
 
 var config = {
-  entry: SRC_JS_DIR + '/index.jsx',
+  entry: {
+    index: SRC_CLIENT_JS_DIR + '/index.jsx',
+    server: SRC_SERVER_JS_DIR + '/server.js'
+  },
   output: {
     path: BUILD_DIR,
-    filename: 'index.js'
+    filename: '[name].js'
   },
   module : {
     rules : [
@@ -27,7 +31,7 @@ var config = {
       },
       {
         test : /\.js?/,
-        include : SRC_JS_DIR,
+        include : SRC_CLIENT_JS_DIR,
         use : 'babel-loader'
       }
     ]
