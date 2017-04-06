@@ -5,6 +5,12 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var BUILD_DIR = path.resolve(__dirname, 'build');
 var SRC_JS_DIR = path.resolve(__dirname, 'src/client/js');
 var SRC_CLIENT_DIR = path.resolve(__dirname, 'src/client');
+var SRC_STYLE_DIR = path.resolve(__dirname, 'src/client/style');
+
+var htmlTemplate = new HtmlWebpackPlugin({
+  template: SRC_CLIENT_DIR + '/index.html',
+  filename: BUILD_DIR+'/index.html'
+});
 
 var config = {
   entry: SRC_JS_DIR + '/index.jsx',
@@ -13,23 +19,21 @@ var config = {
     filename: 'index.js'
   },
   module : {
-    loaders : [
+    rules : [
       {
         test: /\.scss$/,
-        loaders: ['style-loader', 'css-loader', 'sass-loader']
+        include: SRC_STYLE_DIR,
+        use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
         test : /\.js?/,
         include : SRC_JS_DIR,
-        loader : 'babel-loader'
+        use : 'babel-loader'
       }
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: SRC_CLIENT_DIR + '/index.html',
-      filename: BUILD_DIR+'/index.html'
-    })
+    htmlTemplate
   ]
 };
 
