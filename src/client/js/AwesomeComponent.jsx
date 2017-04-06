@@ -15,7 +15,6 @@ class AwesomeComponent extends React.Component {
   }
 
   render() {
-    console.log(styles);
     return (
       <div>
         Likes : <span className="example">{this.state.likesCount}</span>
