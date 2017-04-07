@@ -13,10 +13,9 @@ var htmlTemplate = new HtmlWebpackPlugin({
   filename: BUILD_DIR+'/index.html'
 });
 
-var config = {
+var clientConfig = {
   entry: {
-    index: SRC_CLIENT_JS_DIR + '/index.jsx',
-    server: SRC_SERVER_JS_DIR + '/server.js'
+    index: SRC_CLIENT_JS_DIR + '/index.jsx'
   },
   output: {
     path: BUILD_DIR,
@@ -39,6 +38,34 @@ var config = {
   plugins: [
     htmlTemplate
   ]
-};
+}
 
-module.exports = config;
+var serverConfig = {
+  entry: {
+    server: SRC_SERVER_JS_DIR + '/server.js'
+  },
+  output: {
+    path: BUILD_DIR,
+    filename: '[name].js'
+  },
+  target: 'node',
+  node: {
+    console: true,
+    global: true,
+    process: true,
+    Buffer: true,
+    __filename: false,
+    __dirname: false,
+    setImmediate: true
+  },
+  module : {
+    rules : [
+
+    ]
+  },
+  plugins: [
+
+  ]
+}
+
+module.exports = [clientConfig, serverConfig];
