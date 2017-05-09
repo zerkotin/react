@@ -11,13 +11,13 @@ The RWS Stack was composed with Community, Efficiency and Tehnology in mind.
 ## Build
 How to build your app using the RWS Stack ?  
 
-### Develop
+### Development
 - clone
 - `cd rwsfolder`
 - `npm install`
 - `npm start`
 
-### production
+### Production
 - clone
 - `cd rwsfolder`
 - `npm install`
