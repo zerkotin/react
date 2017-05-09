@@ -13,12 +13,12 @@ How to build your app using the RWS Stack ?
 
 ### Develop
 - clone
-- goto library
+- `cd rwsfolder`
 - `npm install`
 - `npm start`
 
 ### production
 - clone
-- goto library
+- `cd rwsfolder`
 - `npm install`
 - `npm run build`
