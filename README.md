@@ -22,8 +22,8 @@ How to build your app using the RWS Stack ?
 
 ### Development
 Provided that you already cloned and installed...  
-Open 2 terminlas
-1. `npm run watch` - from the 'rwsfolder'
+Open 2 terminlas in the 'rwsfolder'
+1. `npm run watch`
 2. `npm start`
 - Goto [localhost:8081](http://localhost:8081) in the browser
 
