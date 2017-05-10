@@ -9,16 +9,19 @@ The RWS Stack was composed with Community, Efficiency and Tehnology in mind.
 - [Node](https://nodejs.org/en/) [Express](https://expressjs.com/) server
 
 ## Build
-How to build your app using the RWS Stack ?  
+Prerequisites:
+- nodejs and npm installed
 
-### Development
-- clone
-- `cd rwsfolder`
-- `npm install`
-- `npm start`
+How to build your app using the RWS Stack ?  
 
 ### Production
 - clone
 - `cd rwsfolder`
 - `npm install`
 - `npm run build`
+
+### Development
+Provided that you already cloned and installed...
+- `npm run watch` - from the 'rwsfolder'
+- Goto localhost:8081 in the browser
+
