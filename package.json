@@ -1,10 +1,10 @@
 {
-  "name": "dm4p-ui",
+  "name": "react-presentation",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "update": "jest --updateSnapshot",
+    "snapshot": "jest --updateSnapshot",
     "test": "jest",
     "version": "webpack -version",
     "watch": "webpack -d --watch",

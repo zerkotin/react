@@ -1,5 +1,5 @@
 #DM4P
-Installation and running instructions for DM4P
+Installation and running instructions for the Application
 
 ## Installation Instructions
 Run the followoing commands to install the UI  
