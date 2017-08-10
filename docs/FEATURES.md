@@ -5,6 +5,7 @@ Detailed features of the libraries and tools being used in the stack
 - react
 - react-router
 - redux
+- prop-types
 - lodash
 - axios
 - semantic-ui-react
@@ -22,5 +23,5 @@ Detailed features of the libraries and tools being used in the stack
 - extract-text-webpack-plugin
 - html-webpack-plugin
 
-## Testing
+## Unit Testing
 - jest
