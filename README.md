@@ -1,29 +1,36 @@
 # react-stack
-A common react stack for frontend development
+A common react stack for frontend development  
 
-## Install
-- [Installation](docs/INSTALL.md)
+## Main Features
+- development build
+- production build
+- react, less and webpck
 
-## Frontend Libraries
-- react
-- react-router
-- redux
-- lodash
-- axios
-- semantic-ui-react
-- moment
-- babel-polyfill
+## [Detailed Features](docs/FEATURES.md)
 
-## CSS
-- less
-- post-css (auto-prefixer)
-- normalize.css
+## Installation and Usage
+How to install, test, run and build
 
-## Build tools
-- webpack
-- babel
-- extract-text-webpack-plugin
-- html-webpack-plugin
+### Prerequisites
+- install nodejs and npm
+- install http-server - `npm install -g http-server`
+- clone the repository - `git clone github.com/zerkotin/react-stack.git`
 
-## Testing
-- jest
+### First time
+- from the repository folder - `npm install`
+
+### Building the artifacts
+- `npm run build` will build the application using a minifier and place the artifacts in `build` folder
+
+### Serve the UI
+- `npm start`
+- go to [localhost:8080](localhost:8080)
+
+### Testing with jest
+- test - `npm test`
+- update snapshots - `npm run snapshot`
+
+### Run in development mode
+To run with source maps and a watcher open 2 CMD/Terminal windows
+- `npm run watch`  
+- `npm start`  
