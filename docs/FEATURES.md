@@ -3,7 +3,7 @@ Detailed features of the libraries and tools being used in the stack
 
 ## Frontend Libraries
 - __react__ - _UI framework_
-- __react-router__ - _Router for handling navigation and URLs_
+- __react-router__ - _Router for handling browser navigation in SPA_
 - __redux__ - _Global state manager_
 - __prop-types__ - _Type check_
 - __lodash__ - _Utility library_
