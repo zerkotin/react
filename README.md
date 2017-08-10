@@ -6,7 +6,7 @@ A common react stack for frontend development
 - production build
 - react, less and webpck
 
-* [Detailed Features](docs/FEATURES.md)
+* [_Detailed Features_](docs/FEATURES.md)
 
 ## Installation and Usage
 How to install, test, run and build
