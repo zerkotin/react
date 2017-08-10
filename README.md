@@ -1,17 +1,29 @@
-#DM4P
-Installation and running instructions for the Application
+# react-stack
+A common react stack for frontend development
 
-## Installation Instructions
-Run the followoing commands to install the UI  
-- `git clone repositoryName.git` - only once  
-- `npm install` - only once  
-- `npm run build`  
+## Install
+- [Installation](docs/INSTALL.md)
 
-## Running
-- `npm install -g http-server` - only once  
-- `npm start`
+## Frontend Libraries
+- react
+- react-router
+- redux
+- lodash
+- axios
+- semantic-ui-react
+- moment
+- babel-polyfill
 
-## Running in Dev  
-Run the following 2 simultaniously  
-- `npm run watch`  
-- `npm start`  
+## CSS
+- less
+- post-css (auto-prefixer)
+- normalize.css
+
+## Build tools
+- webpack
+- babel
+- extract-text-webpack-plugin
+- html-webpack-plugin
+
+## Testing
+- jest
