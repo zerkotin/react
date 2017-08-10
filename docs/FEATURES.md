@@ -5,9 +5,9 @@ Detailed features of the libraries and tools being used in the stack
 - __react__ - _UI framework_
 - __react-router__ - _Router for handling browser navigation in SPA_
 - __redux__ - _Global state manager_
-- __prop-types__ - _Type check_
+- __prop-types__ - _Type safety for react components_
 - __lodash__ - _Utility library_
-- __axios__ - _Promise based Ajax_
+- __axios__ - _Promise based Ajax library_
 - __semantic-ui-react__ - _UI components library_
 - __moment__ - _Time and Date manipulation_
 - __babel-polyfill__ - _ES6 polyfill_
