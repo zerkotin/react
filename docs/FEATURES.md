@@ -21,7 +21,7 @@ Detailed features of the libraries and tools being used in the stack
 - __webpack__ - _Bundler for CommonsJS_
 - __babel__ - _transpiler from ES6 and JSX to ES5_
 - __extract-text-webpack-plugin__ - _Extract CSS to file_
-- __html-webpack-plugin__ - _Create HTML with .js and .css automatically injected from a template_
+- __html-webpack-plugin__ - Automatically inject .js and .css to HTML template_
 
 ## Unit Testing
 - __jest__ - _Unit Test and Snapshot Tests_
