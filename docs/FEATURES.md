@@ -27,5 +27,5 @@ Detailed features of the libraries and tools being used in the stack
 - __jest__ - _Unit Test and Snapshot Tests_
 
 ## Browser support
-- last 2 versions of all major browsers and ie9 and above (through auto-prefixer and polyfill)
+- last 2 versions of all major browsers + ie9 and above (through auto-prefixer and polyfill)
 - it is up to the developer to test all browsers and fix incompatibilities, the tools are just helping to make it easier.
