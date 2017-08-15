@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "linter": "eslint \"src/js/**\" -o build/eslint.html -f html",
+    "lint": "eslint \"src/js/**\" -o build/eslint.html -f html",
     "snapshot": "jest --updateSnapshot",
     "test": "jest",
     "watch": "webpack -d --watch",
