@@ -1,5 +1,4 @@
 import 'normalize.css';
-import 'semantic-ui-css/semantic.min.css';
 import 'babel-polyfill';
 
 import React from 'react';
@@ -8,7 +7,7 @@ import {HashRouter, Route, Switch} from 'react-router-dom';
 
 import AppView from './AppView.jsx';
 
-import css from '../style/index.less';
+import '../style/index.less';
 
 render(
   <HashRouter>
