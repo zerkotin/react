@@ -26,9 +26,10 @@ How to install, test, run and build
 - `npm start`
 - go to [localhost:8080](localhost:8080)
 
-### Testing with jest
+### Testing
 - test - `npm test`
 - update snapshots - `npm run snapshot`
+- lint - `npm run linter`
 
 ### Run in development mode
 To run with source maps and a watcher open 2 CMD/Terminal windows
