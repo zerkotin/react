@@ -77,7 +77,9 @@ module.exports = {
         "func-call-spacing": "error",
         "func-name-matching": "error",
         "func-names": "error",
-        // "func-style": "error",
+        "func-style": ["error", "declaration", {
+			"allowArrowFunctions": true
+		}],
         "generator-star-spacing": "error",
         "getter-return": "error",
         "global-require": "error",
@@ -94,7 +96,7 @@ module.exports = {
         "keyword-spacing": "off",
         // "line-comment-position": "error",
         //"linebreak-style": [
-        //    "error",
+        //    "warn",
         //    "unix"
         //],
         "lines-around-comment": "error",
@@ -119,7 +121,7 @@ module.exports = {
         "no-caller": "error",
         "no-catch-shadow": "error",
         "no-confusing-arrow": "error",
-        "no-continue": "error",
+        //"no-continue": "error",
         "no-div-regex": "error",
         "no-duplicate-imports": "error",
         "no-else-return": "off",
@@ -165,7 +167,7 @@ module.exports = {
         "no-process-env": "error",
         "no-process-exit": "error",
         "no-proto": "error",
-        "no-prototype-builtins": "error",
+        //"no-prototype-builtins": "error",
         "no-restricted-globals": "error",
         "no-restricted-imports": "error",
         "no-restricted-modules": "error",
@@ -204,7 +206,9 @@ module.exports = {
         "no-whitespace-before-property": "error",
         "no-with": "error",
         "nonblock-statement-body-position": "error",
-        //"object-curly-newline": "error",
+        "object-curly-newline": ["error", {
+			"consistent": true 
+		}],
         "object-curly-spacing": "off",
         "object-property-newline": [
             "error",
