@@ -19,6 +19,7 @@ Detailed features of the libraries and tools being used in the stack
 
 ## Build tools
 - __webpack__ - _Bundler for CommonsJS_
+- __elslint__ - _checks code style and possible errors_
 - __babel__ - _transpiler from ES6 and JSX to ES5_
 - __extract-text-webpack-plugin__ - _Extract CSS to file_
 - __html-webpack-plugin__ - _Automatically inject .js and .css to HTML template_
