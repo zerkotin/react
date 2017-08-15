@@ -29,7 +29,7 @@ How to install, test, run and build
 ### Testing
 - test - `npm test`
 - update snapshots - `npm run snapshot`
-- lint - `npm run linter` - creates a report in `build/eslint.html`
+- lint - `npm run lint` - creates a report in `build/eslint.html`
 
 ### Run in development mode
 To run with source maps and a watcher open 2 CMD/Terminal windows
