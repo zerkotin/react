@@ -186,7 +186,7 @@ module.exports = {
         "no-template-curly-in-string": "error",
         "no-ternary": "off",
         "no-throw-literal": "error",
-        "no-trailing-spaces": "error",
+        //"no-trailing-spaces": "error",
         "no-undef-init": "error",
         "no-undefined": "error",
         //"no-underscore-dangle": "error",
@@ -207,7 +207,7 @@ module.exports = {
         "no-with": "error",
         "nonblock-statement-body-position": "error",
         "object-curly-newline": ["error", {
-			"consistent": true 
+			"consistent": true
 		}],
         "object-curly-spacing": "off",
         "object-property-newline": [
@@ -234,7 +234,7 @@ module.exports = {
         "prefer-template": "off",
         "quote-props": "off",
         "quotes": "off",
-        "radix": "error",
+        //"radix": "error",
         "require-await": "error",
         // "require-jsdoc": "error",
         "rest-spread-spacing": "error",
