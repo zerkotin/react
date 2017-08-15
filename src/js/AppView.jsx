@@ -9,10 +9,6 @@ import css from '../style/app-view.less';
 //TODO add examples with props and state
 //TODO add example for redux
 //TODO use lodash
-//TODO add documentation for dependencies (and features)
-//TODO add documentation of how to use scripts (testing)
-//TODO add linter
-//TODO decide between fontawesome and semantic-ui-react
 class AppView extends React.Component {
 
   constructor(props) {
