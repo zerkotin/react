@@ -60,8 +60,6 @@
     "react-router-dom": "^4.1.2",
     "react-test-renderer": "^15.6.1",
     "redux": "^3.7.2",
-    "semantic-ui-css": "^2.2.11",
-    "semantic-ui-react": "^0.71.3",
     "style-loader": "^0.16.1",
     "url-loader": "^0.5.9",
     "webpack": "^2.3.3"
