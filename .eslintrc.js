@@ -18,6 +18,9 @@ module.exports = {
     "rules": {
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
+        "react/prop-types": [1, { "ignore": [
+          "history", "location"
+        ]}],
         "accessor-pairs": "error",
         "array-bracket-newline": "error",
         "array-bracket-spacing": [
@@ -193,7 +196,7 @@ module.exports = {
         "no-unmodified-loop-condition": "error",
         "no-unneeded-ternary": "error",
         "no-unused-expressions": ["error", { "allowShortCircuit": true }],
-        "no-use-before-define": "error",
+        "no-use-before-define": ["warn", { "functions": false}],
         "no-useless-call": "error",
         "no-useless-computed-key": "error",
         "no-useless-concat": "error",

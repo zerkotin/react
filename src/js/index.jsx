@@ -15,5 +15,5 @@ render(
       <Route path="/" component={AppView}/>
     </Switch>
   </HashRouter>
-  ,document.getElementById('app')
+  , document.getElementById('app')
 );

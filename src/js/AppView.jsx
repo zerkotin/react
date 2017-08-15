@@ -1,28 +1,29 @@
 import React from 'react';
 import {Route, Switch, withRouter, Link} from 'react-router-dom';
 
-import {Icon} from 'semantic-ui-react';
+import {Icon} from './common/components.jsx';
 
-import css from '../style/app-view.less';
+import '../style/app-view.less';
 
-//TODO export classes to files
-//TODO add examples with props and state
 //TODO add example for redux
 //TODO use lodash
 class AppView extends React.Component {
 
   constructor(props) {
     super(props);
+
+    this.state = {path: null};
   }
 
   componentDidMount() {
-    this.props.history.listen(location => console.dir(location));
+    this.setState({path: this.props.location.pathname});
+    this.props.history.listen(location => this.setState({path: location.pathname}));
   }
 
   render() {
     return (
       <div className="app-view">
-        <HeaderView />
+        <HeaderView path={this.state.path}/>
         <div className="center-view">
           <NavigationView />
           <div id="main-view" className="main-view">
@@ -38,15 +39,15 @@ class AppView extends React.Component {
   }
 }
 
-function HomeView(props) {
+function HomeView() {
   return <div>Home View</div>;
 }
 
-function AboutView(props) {
+function AboutView() {
   return <div>About View</div>;
 }
 
-function NavigationView(props) {
+function NavigationView() {
   const items = [
     <Link key="home" to="/"><Icon name="home"/>Home</Link>,
     <Link key="about" to="/about"><Icon name="info"/>About</Link>
@@ -54,11 +55,11 @@ function NavigationView(props) {
   return <div className="navigation-view">{items}</div>;
 }
 
-function HeaderView(props) {
-  return <div className="header-view"><Icon name="settings"/>Header</div>;
+function HeaderView({path}) {
+  return <div className="header-view"><Icon name="settings"/>Path: {path}</div>;
 }
 
-function FooterView(props) {
+function FooterView() {
   return <div className="footer-view">Footer<Icon name="copyright"/></div>;
 }
 
