@@ -42,7 +42,7 @@ module.exports = [{
       {
         test : /\.js?/,
         include : SRC_JS_DIR,
-        use : 'babel-loader'
+        use : ['babel-loader', 'eslint-loader']
       }
     ]
   },
