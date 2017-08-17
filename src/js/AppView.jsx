@@ -1,5 +1,6 @@
 import React from 'react';
 import {Route, Switch, withRouter, Link} from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import {Icon} from './common/components.jsx';
 
@@ -7,6 +8,10 @@ import '../style/app-view.less';
 
 //TODO add example for redux
 //TODO use lodash
+/**
+JSDOC example
+AppView is the main view class for the application
+*/
 class AppView extends React.Component {
 
   constructor(props) {
@@ -58,6 +63,8 @@ function NavigationView() {
 function HeaderView({path}) {
   return <div className="header-view"><Icon name="settings"/>Path: {path}</div>;
 }
+
+HeaderView.propTypes = {path: PropTypes.string};
 
 function FooterView() {
   return <div className="footer-view">Footer<Icon name="copyright"/></div>;
