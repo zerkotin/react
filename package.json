@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zerkotin/react.git"
+  },
   "scripts": {
     "lint": "eslint \"src/js/**\" -o build/eslint.html -f html",
     "snapshot": "jest --updateSnapshot",
@@ -12,7 +16,7 @@
     "start": "cd build && http-server -c-1"
   },
   "author": "Itzik Cohen Arazi",
-  "license": "private",
+  "license": "MIT",
   "browserslist": [
     "> 1%",
     "last 2 versions",
