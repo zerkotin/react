@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppView 1`] = `
+<div
+  className="app-view"
+>
+  <div
+    className="header-view"
+  >
+    <i
+      className="fas fa-settings"
+    />
+    Path: 
+    /
+  </div>
+  <div
+    className="center-view"
+  >
+    <div
+      className="navigation-view"
+    >
+      <a
+        href="#/"
+        onClick={[Function]}
+      >
+        <i
+          className="fas fa-home"
+        />
+        Home
+      </a>
+      <a
+        href="#/about"
+        onClick={[Function]}
+      >
+        <i
+          className="fas fa-info"
+        />
+        About
+      </a>
+    </div>
+    <div
+      className="main-view"
+      id="main-view"
+    >
+      <div>
+        Home View
+      </div>
+    </div>
+  </div>
+  <div
+    className="footer-view"
+  >
+    Footer
+    <i
+      className="fas fa-copyright"
+    />
+  </div>
+</div>
+`;

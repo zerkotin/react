@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, Switch, withRouter, Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import {Icon} from './common/components.jsx';
+import {Icon} from './components/components.jsx';
 
 import '../style/app-view.less';
 

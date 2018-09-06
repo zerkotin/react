@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -13,10 +12,11 @@ const extractCSS = new ExtractTextPlugin('vendors.css');
 
 const htmlTemplate = new HtmlWebpackPlugin({
   template: SRC_DIR + '/index.html',
-  filename: BUILD_DIR+'/index.html'
+  filename: BUILD_DIR + '/index.html'
 });
 
-module.exports = [{
+module.exports = [
+{
   entry: {
     index: SRC_JS_DIR + '/index.jsx'
   },
@@ -24,8 +24,8 @@ module.exports = [{
     path: BUILD_DIR,
     filename: '[name].js'
   },
-  module : {
-    rules : [
+  module: {
+    rules: [
       {
         test: /\.css$/,
         use: extractCSS.extract(['css-loader'])
@@ -40,9 +40,9 @@ module.exports = [{
         use: extractLESS.extract(['css-loader', 'postcss-loader', 'less-loader'])
       },
       {
-        test : /\.js?/,
-        include : SRC_JS_DIR,
-        use : ['babel-loader', 'eslint-loader']
+        test: /\.js?/,
+        include: SRC_JS_DIR,
+        use: ['babel-loader', 'eslint-loader']
       }
     ]
   },
@@ -51,4 +51,5 @@ module.exports = [{
     extractLESS,
     htmlTemplate
   ]
-}];
+}
+];

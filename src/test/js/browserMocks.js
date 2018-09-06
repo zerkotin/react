@@ -1,3 +1,6 @@
+/**
+ * mock for browser local storage
+ */
 class LocalStorageMock {
   constructor() {
     this.store = {};
@@ -18,6 +21,6 @@ class LocalStorageMock {
   removeItem(key) {
     delete this.store[key];
   }
-};
+}
 
-global.localStorage = new LocalStorageMock;
+global.localStorage = new LocalStorageMock();
