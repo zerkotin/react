@@ -2,7 +2,9 @@ module.exports = {
     "env": {
         "browser": true,
         "commonjs": true,
-        "es6": true
+		"es6": true,
+		"node": true,
+		"jest": true
     },
     "extends": ["eslint:recommended", "plugin:react/recommended"],
     "parserOptions": {
@@ -185,7 +187,7 @@ module.exports = {
         "no-shadow-restricted-names": "error",
         "no-spaced-func": "error",
         "no-sync": "error",
-        "no-tabs": "error",
+        "no-tabs": "off",
         "no-template-curly-in-string": "error",
         "no-ternary": "off",
         "no-throw-literal": "error",
