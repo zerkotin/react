@@ -39,6 +39,13 @@ const listItemStyle = Object.assign(
  */
 export class ListItem extends React.Component {
 
+	static propTypes = {
+		className: PropTypes.string,
+		header: PropTypes.string,
+		children: PropTypes.any,
+		footer: PropTypes.string
+	};
+
 	constructor(props) {
         super(props);
 
@@ -61,11 +68,4 @@ export class ListItem extends React.Component {
         );
     }
 }
-
-ListItem.propTypes = {
-    className: PropTypes.string,
-    header: PropTypes.string,
-    children: PropTypes.any,
-    footer: PropTypes.string
-};
 

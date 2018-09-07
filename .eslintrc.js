@@ -10,6 +10,7 @@ module.exports = {
 			"version": "16.0"
 		}
 	},
+	"parser": "babel-eslint",
     "extends": ["eslint:recommended", "plugin:react/recommended"],
     "parserOptions": {
         "ecmaVersion": 8,
@@ -187,7 +188,7 @@ module.exports = {
         "no-script-url": "error",
         "no-self-compare": "error",
         "no-sequences": "error",
-        "no-shadow": "warn",
+        "no-shadow": "off",
         "no-shadow-restricted-names": "error",
         "no-spaced-func": "error",
         "no-sync": "error",
