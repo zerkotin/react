@@ -68,4 +68,3 @@ export class ListItem extends React.Component {
         );
     }
 }
-
