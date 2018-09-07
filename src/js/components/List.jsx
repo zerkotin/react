@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {style, layout} from './styles.js';
 
 /**
- * List view 
+ * List view
  */
 export class List extends React.Component {
 
@@ -38,7 +38,8 @@ const listItemStyle = Object.assign(
  * List Item
  */
 export class ListItem extends React.Component {
-    constructor(props) {
+
+	constructor(props) {
         super(props);
 
         this.state = {collapsed: true};

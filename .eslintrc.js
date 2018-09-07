@@ -2,17 +2,21 @@ module.exports = {
     "env": {
         "browser": true,
         "commonjs": true,
-		"es6": true,
 		"node": true,
 		"jest": true
-    },
+	},
+	"settings": {
+		"react": {
+			"version": "16.0"
+		}
+	},
     "extends": ["eslint:recommended", "plugin:react/recommended"],
     "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module",
         "ecmaFeatures": {
-            "experimentalObjectRestSpread": true,
             "jsx": true
-        },
-        "sourceType": "module"
+        }
     },
     "plugins": [
         "react"
